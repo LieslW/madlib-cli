@@ -1,5 +1,3 @@
-import re
-
 welcome_message = """
 ******************************
 **  ***** WELCOME *****     **
@@ -22,11 +20,19 @@ welcome_message = """
 
 print(welcome_message)
 
-def read_template():
+
+def read_template(track):
+    try:
+        with open(track, 'r') as file:
+            contents = file.read().strip()
+            return contents
+    except FileNotFoundError:
+        raise FileNotFoundError
+
+
+def parse_template(string):
     pass
 
-def parse_template():
-    pass
 
-def merge():
+def merge(string, user_input):
     pass
