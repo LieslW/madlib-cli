@@ -3,15 +3,11 @@ Project: Madlib Cli
 Author: Liesl White
 
 ## Links and Resources
-back-end server url (when applicable)
-front-end application (when applicable)
+[MadLib](madlib_cli/madlib.py)
+[MadLib Tests](tests/test_madlib_cli.py)
 
 ## Setup
 .env requirements (where applicable)
-i.e.
-
-PORT - Port Number
-DATABASE_URL - URL to the running Postgres instance/db
 
 ### How to initialize/run your application (where applicable)  
 
