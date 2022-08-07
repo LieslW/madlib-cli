@@ -17,12 +17,13 @@ DATABASE_URL - URL to the running Postgres instance/db
 
 ```python
 
+source .venv/bin/Activate
+pip install -r requirements.txt
 pytest
+
 
 ```
 
-e.g. python main.py
-How to use your library (where applicable)
 
 ## Tests
 How do you run tests?
