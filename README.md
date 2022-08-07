@@ -22,6 +22,5 @@ pytest
 
 
 ## Tests
-How do you run tests?
-Any tests of note?
-Describe any tests that you did not complete, skipped, etc  
+
+To run the tests, just type in pytest in your terminal (if not already installed, install pytest via pip). 
