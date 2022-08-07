@@ -30,8 +30,26 @@ def read_template(track):
         raise FileNotFoundError
 
 
-def parse_template(string):
-    pass
+def parse_template(pre_string):
+    stripped_string = ""
+    parts = []
+    content = False
+    characters = ""
+
+    for letter in pre_string:
+        if letter == "{":
+            stripped_string += letter
+            content = True
+            characters = ""
+        elif letter == "}":
+            stripped_string += letter
+            content = False
+            parts.append(characters)
+        elif content:
+            characters += letter
+        else:
+            stripped_string += letter
+    return stripped_string, tuple(parts)
 
 
 def merge(string, user_input):
