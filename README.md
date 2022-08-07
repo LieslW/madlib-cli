@@ -1,5 +1,5 @@
-# LAB - Class 03
-Project: Madlib Cli
+# LAB - Class 03  
+Project: Madlib Cli  
 Author: Liesl White
 
 ## Links and Resources
